@@ -10,14 +10,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html
-      lang="en"
-      dir="ltr"
+      lang='en'
+      dir='ltr'
       className={`${avineo.variable} ${monument_regular.variable} ${monument_ultrabold.variable}`}
     >
       <body
         className={cn(
           'bg-background text-foreground selection:bg-primary selection:text-primary-foreground',
-          monument_regular.className
+          monument_regular.className,
         )}
       >
         {children}

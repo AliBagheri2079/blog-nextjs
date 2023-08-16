@@ -22,7 +22,7 @@ const Content = ({ string, optionalBool, optionalNumber }) => {
       </CardContent>
       <CardFooter>
         <p>Card Footer</p>
-        <Button className="hover:animate-accordion-down">
+        <Button className='hover:animate-accordion-down'>
           <span>Button</span>
         </Button>
       </CardFooter>
@@ -38,6 +38,6 @@ Content.propTypes = {
 
 export default function Home() {
   return (
-    <Content string="Ali Bagheri" optionalBool={false} optionalNumber={2} />
+    <Content string='Ali Bagheri' optionalBool={false} optionalNumber={2} />
   );
 }
