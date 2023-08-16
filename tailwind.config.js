@@ -2,7 +2,7 @@ import shadcnPlugin from './lib/shadcn/tw-plugin';
 import animatePlugin from 'tailwindcss-animate';
 
 /** @type {import('tailwindcss').Config} */
-const config = {
+const tailwindConfig = {
   content: [
     './pages/**/*.{js,jsx}',
     './components/**/*.{js,jsx}',
@@ -12,4 +12,4 @@ const config = {
   plugins: [shadcnPlugin, animatePlugin],
 };
 
-export default config;
+module.exports = tailwindConfig;
