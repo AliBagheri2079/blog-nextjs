@@ -1,12 +1,23 @@
 {
   "name": "blog-nextjs",
+  "title": "Story Telling About Nothing",
+  "description": "In this Webpage you see a lot of animation and tricks...",
+  "author": "Ali Bagheri",
   "version": "0.1.0",
   "private": true,
+  "keywords": [
+    "Blog",
+    "Animation",
+    "Visuall 3D"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:style": "stylelint **/*.css --fix",
+    "format": "prettier . --write",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@radix-ui/colors": "^2.0.1",
