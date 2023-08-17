@@ -3,9 +3,6 @@ import localFont from 'next/font/local';
 const avineo = localFont({
   src: [
     {
-      path: './index.eot',
-    },
-    {
       path: './index.woff2',
     },
     {

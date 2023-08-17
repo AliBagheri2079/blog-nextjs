@@ -1,5 +1,14 @@
+import { Homochiral } from '@/components/visuall/spline';
+
 const Home = () => {
-  return <h1>Blog</h1>;
+  return (
+    <>
+      <Homochiral />
+      <main className='container min-h-screen bg-primary/75'>
+        <h1>ali bagheri</h1>
+      </main>
+    </>
+  );
 };
 
 export default Home;
