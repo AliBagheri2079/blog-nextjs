@@ -11,14 +11,14 @@
       "error",
       {
         "groups": [
-          "index",
-          "sibling",
-          "parent",
-          "internal",
-          "external",
-          "builtin",
+          "type",
           "object",
-          "type"
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index"
         ]
       }
     ]
