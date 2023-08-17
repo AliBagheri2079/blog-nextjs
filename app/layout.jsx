@@ -14,6 +14,9 @@ function RootLayout({ children }) {
       dir='ltr'
       className={`${avineo.variable} ${monument_regular.variable} ${monument_ultrabold.variable}`}
     >
+      <head>
+        <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+      </head>
       <body
         className={cn(
           'bg-background text-foreground selection:bg-primary selection:text-primary-foreground',
