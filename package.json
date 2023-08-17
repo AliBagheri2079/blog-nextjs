@@ -1,21 +1,62 @@
 {
   "name": "blog-nextjs",
+  "title": "Story Telling About Nothing",
+  "description": "In this Webpage you see a lot of animation and tricks...",
+  "author": "Ali Bagheri",
   "version": "0.1.0",
   "private": true,
+  "keywords": [
+    "Blog",
+    "Animation",
+    "Visuall 3D"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:style": "stylelint **/*.css --fix",
+    "format": "prettier . --write",
+    "prepare": "husky install"
   },
   "dependencies": {
+    "@radix-ui/colors": "^2.0.1",
+    "@radix-ui/react-accordion": "^1.1.2",
+    "@radix-ui/react-alert-dialog": "^1.0.4",
+    "@radix-ui/react-aspect-ratio": "^1.0.3",
+    "@radix-ui/react-avatar": "^1.0.3",
+    "@radix-ui/react-slot": "^1.0.2",
+    "@stitches/core": "^1.2.8",
+    "@stitches/react": "^1.2.8",
     "autoprefixer": "10.4.15",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.16",
+    "lucide-react": "^0.268.0",
     "next": "13.4.16",
     "postcss": "8.4.27",
+    "prop-types": "^15.8.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "tailwindcss": "3.3.3"
+    "tailwind-merge": "^1.14.0",
+    "tailwindcss": "3.3.3",
+    "tailwindcss-animate": "^1.0.6"
+  },
+  "devDependencies": {
+    "cssnano": "^6.0.1",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.28.0",
+    "eslint-plugin-tailwindcss": "^3.13.0",
+    "lint-staged": "^14.0.0",
+    "postcss-import": "^15.1.0",
+    "postcss-preset-env": "^9.1.1",
+    "prettier": "^3.0.2",
+    "stylelint": "^15.10.2",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-config-tailwindcss": "^0.0.7",
+    "stylelint-order": "^6.0.3",
+    "husky": "^8.0.0"
   }
 }
