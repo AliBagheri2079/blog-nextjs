@@ -1,7 +1,7 @@
 import { Loader } from 'lucide-react';
 import { Box, FlexCenter } from './index.styled';
 
-const Loading = () => {
+const HomochiralLoading = () => {
   return (
     <Box>
       <FlexCenter>
@@ -12,4 +12,4 @@ const Loading = () => {
   );
 };
 
-export default Loading;
+export default HomochiralLoading;

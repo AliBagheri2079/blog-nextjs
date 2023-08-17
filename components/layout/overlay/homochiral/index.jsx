@@ -1,7 +1,7 @@
 import { Box, Container } from './index.styled';
 import { Homochiral } from '@/components/visuall/spline';
 
-const SplineBackground = () => {
+const HomochiralOverlay = () => {
   return (
     <Box>
       <Container>
@@ -11,4 +11,4 @@ const SplineBackground = () => {
   );
 };
 
-export default SplineBackground;
+export default HomochiralOverlay;

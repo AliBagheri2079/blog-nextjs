@@ -1,10 +1,11 @@
-import { SplineBackground } from '@/components/layout/home';
+import Offcanvas from '@/components/layout/offcanvas';
+import { HomochiralOverlay } from '@/components/layout/overlay';
 
 const Home = () => {
   return (
     <>
-      <SplineBackground />
-      <nav>navigation</nav>
+      <HomochiralOverlay />
+      <Offcanvas />
 
       <main className='container min-h-screen bg-primary/75'>
         <h1>ali bagheri</h1>
