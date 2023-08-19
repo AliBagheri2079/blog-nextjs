@@ -1,6 +1,6 @@
 import { stitches } from '@/lib/config/stitches.config';
 
-export const Box = stitches.styled('div', {
+export const Box = stitches.styled('section', {
   pos: 'fixed',
   inset: '0',
   zIndex: `calc(${'$overlay'} * -1)`,

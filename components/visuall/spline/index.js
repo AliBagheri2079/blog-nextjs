@@ -1,1 +1,1 @@
-export { default as Homochiral } from './Homochiral';
+export { default as Homochiral } from './homochiral';
