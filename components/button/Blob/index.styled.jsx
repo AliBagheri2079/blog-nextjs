@@ -28,13 +28,14 @@ const BlobButton = stitches.styled(Button, {
 
   '&::before': {
     top: 0,
+    zIndex: -1,
     overflow: 'hidden',
     animation: `${borderTransform} 8s linear infinite`,
   },
 
   '&::after': {
     top: '10%',
-    zIndex: -1,
+    zIndex: -2,
     borderStyle: 'solid',
     borderWidth: '1px',
     br: '60% 40% 55% 45% / 55% 45% 55% 45%',
