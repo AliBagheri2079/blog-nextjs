@@ -1,15 +1,15 @@
 'use client';
 import dynamic from 'next/dynamic';
+import Loading from './loading';
 import { URL } from '@/utils/constant';
-import { HomochiralLoading } from '@/layout/overlay';
 
 const DynamicSpline = dynamic(() => import('@splinetool/react-spline'), {
   ssr: false, // Disable server-side rendering
-  loading: HomochiralLoading,
+  loading: Loading,
 });
 
 const Homochiral = () => {
-  return <DynamicSpline scene={URL.SPLINE_HOMOCHIRAL} />;
+  return <DynamicSpline scene={URL.SPLINE.HOMOCHIRAL} />;
 };
 
 export default Homochiral;
