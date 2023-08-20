@@ -30,10 +30,10 @@ const OffcanvasToggle = ({ toggle }) => {
         onClick={toggle}
         css={{
           '&::before': {
-            bg: 'hsl(var(--primary))',
+            bg: 'hsl(var(--primary) / 0.75)',
           },
           '&::after': {
-            borderColor: 'hsl(var(--primary-foreground))',
+            // borderColor: 'hsl(var(--primary-foreground))',
           },
         }}
       >

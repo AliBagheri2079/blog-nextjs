@@ -2,7 +2,7 @@ import { stitches } from '@/lib/config/stitches.config';
 
 export const Text = stitches.styled('span', {
   fontFamily: 'var(--font-avineo)',
-  mixBlendMode: 'screen',
+  // mixBlendMode: 'screen',
   letterSpacing: '0.1em',
 
   fontSize: '0.875rem',
