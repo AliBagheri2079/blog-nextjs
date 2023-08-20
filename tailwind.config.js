@@ -4,8 +4,10 @@ import animatePlugin from 'tailwindcss-animate';
 /** @type {import('tailwindcss').Config} */
 const tailwindConfig = {
   content: [
-    './pages/**/*.{js,jsx}',
+    './features/**/*.{js,jsx}',
+    './layout/**/*.{js,jsx}',
     './components/**/*.{js,jsx}',
+    './pages/**/*.{js,jsx}',
     './app/**/*.{js,jsx}',
     './src/**/*.{js,jsx}',
   ],
