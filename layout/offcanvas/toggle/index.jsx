@@ -1,11 +1,15 @@
 import { motion } from 'framer-motion';
 import PropTypes from 'prop-types';
+
+import { Text } from './index.styled';
 import { BlobButton } from '@/components/button';
+import { AbsoluteOverlay } from '@/components/overlay';
+
+const ToggleRoot = motion(AbsoluteOverlay);
 
 const OffcanvasToggle = ({ toggle }) => {
   return (
-    <motion.div
-      layout
+    <ToggleRoot
       drag
       dragConstraints={{
         top: -20,
@@ -14,18 +18,28 @@ const OffcanvasToggle = ({ toggle }) => {
         bottom: 50,
       }}
       dragElastic={0.3}
-      className='absolute right-0 top-0 me-6 mt-6'
+      css={{
+        inset: '0 0 auto auto',
+        me: '1.5rem',
+        mt: '1.5rem',
+        zIndex: '$overlay',
+      }}
     >
       <BlobButton
         variant='ghost'
-        className='before:bg-primary after:border-primary-foreground'
         onClick={toggle}
+        css={{
+          '&::before': {
+            bg: 'hsl(var(--primary))',
+          },
+          '&::after': {
+            borderColor: 'hsl(var(--primary-foreground))',
+          },
+        }}
       >
-        <span className='font-avineo text-sm tracking-widest mix-blend-screen sm:text-xl md:text-2xl lg:text-3xl'>
-          Menu
-        </span>
+        <Text>Menu</Text>
       </BlobButton>
-    </motion.div>
+    </ToggleRoot>
   );
 };
 

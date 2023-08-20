@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import MenuItem from './item';
 import { menuItems } from '@/data/menu-items';
+import { AbsoluteOverlay } from '@/components/overlay';
 
 const variants = {
   open: {
@@ -12,9 +13,16 @@ const variants = {
 };
 
 const OffcanvasMenu = () => (
-  <div className='absolute mt-24 px-12 py-6'>
+  <motion.nav
+    layout
+    initial={false}
+    style={{
+      marginBlockStart: '6rem',
+      padding: '1.5rem 3rem',
+    }}
+    className={AbsoluteOverlay.className}
+  >
     <motion.ul
-      layoutId='menu'
       initial='closed'
       animate='open'
       exit='closed'
@@ -24,7 +32,7 @@ const OffcanvasMenu = () => (
         <MenuItem key={id} {...props} />
       ))}
     </motion.ul>
-  </div>
+  </motion.nav>
 );
 
 export default OffcanvasMenu;

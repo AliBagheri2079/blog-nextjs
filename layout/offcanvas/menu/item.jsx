@@ -1,9 +1,10 @@
 import { motion } from 'framer-motion';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
-import Title from './title';
-import Underline from './underline';
+
 import { randomId } from '@/utils/helpers/random-id';
+import { RevealText } from '@/components/text';
+import { Underline } from '@/components/icon';
 
 const variants = {
   open: {
@@ -30,15 +31,22 @@ const MenuItem = ({ text, url }) => {
       animate='open'
       exit='closed'
       variants={variants}
-      className='my-10'
+      style={{
+        marginBlock: '2.5rem',
+      }}
     >
       <Link
         href={url ?? '/not-found'}
-        className='group relative flex overflow-hidden'
-        style={{ fontSize: 'clamp(1rem, 1rem + 5vw, 5rem)' }}
+        className='reveal-wrapper underline-wrapper'
+        style={{
+          position: 'relative',
+          display: 'inline-flex',
+          overflow: 'hidden',
+          fontSize: 'clamp(1rem, 1rem + 5vw, 5rem)',
+        }}
       >
         {text.split('').map((value, index) => (
-          <Title key={randomId()} value={value} index={index} />
+          <RevealText key={randomId()} value={value} index={index} />
         ))}
 
         <Underline />

@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { AbsoluteOverlay } from '@/components/overlay';
 
 const variants = {
   open: {
@@ -20,15 +21,18 @@ const variants = {
   },
 };
 
+const Backdrop = motion(AbsoluteOverlay);
+
 const OffcanvasBackdrop = () => {
   return (
-    <motion.div
-      layoutId='backdrop'
+    <Backdrop
       initial='closed'
       animate='open'
       exit='closed'
       variants={variants}
-      className='absolute inset-0 -z-10 bg-secondary'
+      css={{
+        bg: 'hsl(var(--secondary))',
+      }}
     />
   );
 };
