@@ -33,7 +33,7 @@ const OffcanvasToggle = ({ toggle }) => {
             bg: 'hsl(var(--primary) / 0.75)',
           },
           '&::after': {
-            // borderColor: 'hsl(var(--primary-foreground))',
+            borderColor: 'hsl(var(--foreground))',
           },
         }}
       >
