@@ -5,6 +5,7 @@ import { AnimatePresence } from 'framer-motion';
 import OffcanvasBackdrop from './back-drop';
 import OffcanvasMenu from './menu';
 import OffcanvasToggle from './toggle';
+import { AbsoluteOverlay } from '@/components/overlay';
 
 const Offcanvas = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,10 +15,10 @@ const Offcanvas = () => {
     <>
       <AnimatePresence>
         {isMenuOpen && (
-          <>
+          <AbsoluteOverlay css={{ zIndex: '$overlay' }}>
             <OffcanvasBackdrop />
             <OffcanvasMenu />
-          </>
+          </AbsoluteOverlay>
         )}
       </AnimatePresence>
       <OffcanvasToggle toggle={() => toggleMenu()} />
