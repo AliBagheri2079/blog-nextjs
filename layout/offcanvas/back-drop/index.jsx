@@ -21,11 +21,11 @@ const variants = {
   },
 };
 
-const Backdrop = motion(AbsoluteOverlay);
+const MotionComponent = motion(AbsoluteOverlay);
 
 const OffcanvasBackdrop = () => {
   return (
-    <Backdrop
+    <MotionComponent
       initial='closed'
       animate='open'
       exit='closed'

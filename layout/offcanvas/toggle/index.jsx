@@ -5,11 +5,11 @@ import { Text } from './index.styled';
 import { BlobButton } from '@/components/button';
 import { AbsoluteOverlay } from '@/components/overlay';
 
-const ToggleRoot = motion(AbsoluteOverlay);
+const MotionComponent = motion(AbsoluteOverlay);
 
 const OffcanvasToggle = ({ toggle }) => {
   return (
-    <ToggleRoot
+    <MotionComponent
       drag
       dragConstraints={{
         top: -20,
@@ -39,7 +39,7 @@ const OffcanvasToggle = ({ toggle }) => {
       >
         <Text>Menu</Text>
       </BlobButton>
-    </ToggleRoot>
+    </MotionComponent>
   );
 };
 
