@@ -14,7 +14,7 @@ const TwitterLink = () => {
   return (
     <FollowPointerButton
       ref={elemRef}
-      className='py-2 pe-8'
+      className='py-2 md:pe-8'
       point={point}
       handlePointerMove={handlePointerMove}
       handlePointerOut={handlePointerOut}
