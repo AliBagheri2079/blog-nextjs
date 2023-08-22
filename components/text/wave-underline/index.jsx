@@ -6,7 +6,7 @@ import Svg from '@/components/svg';
 const WaveUnderlineText = ({ children }) => {
   return (
     <Text>
-      <span className='text-primary/90'>{children}</span>
+      <span className='text-primary'>{children}</span>
 
       <Svg
         className='wave-icon wave-icon--position'
