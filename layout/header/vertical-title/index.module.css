@@ -1,0 +1,18 @@
+.Title {
+  --tw-rotate: 180deg;
+
+  color: theme('colors.muted.foreground');
+  font-size: theme('fontSize.sm');
+  text-align: center;
+}
+
+@screen md {
+  .Title {
+    writing-mode: vertical-lr;
+    rotate: var(--tw-rotate);
+
+    @supports not (rotate: var(--tw-rotate)) {
+      transform: rotate(var(--tw-rotate));
+    }
+  }
+}
