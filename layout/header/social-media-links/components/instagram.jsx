@@ -1,4 +1,3 @@
-'use client';
 import { useRef } from 'react';
 import Link from 'next/link';
 import { Instagram } from 'lucide-react';
