@@ -4,7 +4,6 @@ const Text = stitches.styled('span', {
   pos: 'relative',
   isolation: 'isolate',
   display: 'inline-block',
-  mx: '0.1rem',
 
   '& :where(.wave-icon)': {
     size: '100%',

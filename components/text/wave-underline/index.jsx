@@ -24,7 +24,7 @@ const WaveUnderlineText = ({ children }) => {
 };
 
 WaveUnderlineText.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.elementType.isRequired,
 };
 
 export default WaveUnderlineText;
