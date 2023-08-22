@@ -1,1 +1,3 @@
-export const randomId = () => crypto.randomUUID();
+const randomId = () => crypto.randomUUID();
+
+export default randomId;

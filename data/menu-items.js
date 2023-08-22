@@ -1,4 +1,4 @@
-import { randomId } from '@/utils/helpers/random-id';
+import { randomId } from '@/utils/helpers';
 
 export const menuItems = [
   { id: randomId(), text: 'home', url: '/' },

@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
 
-import { randomId } from '@/utils/helpers/random-id';
+import { randomId } from '@/utils/helpers';
 import { RevealText } from '@/components/text';
 import { Underline } from '@/components/icon';
 
