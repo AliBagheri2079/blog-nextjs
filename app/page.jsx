@@ -1,10 +1,10 @@
-import { HomochiralThree } from '@/features/three';
-import Header from '@/layout/header';
+import { HomochiralThree as Overlay } from '@/features/three';
+import { Content, Header } from '@/layout/home';
 
 const Home = () => {
   return (
     <>
-      <HomochiralThree />
+      <Overlay />
       <Header />
 
       <main className='container h-screen min-h-screen bg-primary-foreground/10'>
