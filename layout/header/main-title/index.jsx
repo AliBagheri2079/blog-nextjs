@@ -16,7 +16,7 @@ const MainTitle = () => {
         variants={variants.scale}
         className='h-full'
       >
-        <h1 className='line-clamp-6 max-w-md text-center font-monument_ultrabold text-5xl capitalize !leading-tight tracking-tight md:max-w-2xl md:text-7xl lg:text-8xl'>
+        <h1 className='line-clamp-6 max-w-md text-center font-monument_ultrabold text-5xl capitalize !leading-tight md:max-w-2xl md:text-7xl lg:text-8xl'>
           making <WaveUnderlineText>good</WaveUnderlineText> shit since 2022
         </h1>
       </MotionComponent>
