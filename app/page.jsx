@@ -1,5 +1,5 @@
+import { HomochiralThree } from '@/features/three';
 import Header from '@/layout/header';
-import HomochiralThree from '@/features/three/homochiral';
 
 const Home = () => {
   return (
