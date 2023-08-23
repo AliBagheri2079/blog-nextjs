@@ -1,11 +1,7 @@
 'use client';
 import { useState } from 'react';
-import { AnimatePresence } from 'framer-motion';
-
-import OffcanvasBackdrop from './back-drop';
-import OffcanvasMenu from './menu';
 import OffcanvasToggle from './toggle';
-import { AbsoluteOverlay } from '@/components/overlay';
+import OffcanvasNavbar from './navbar';
 
 const Offcanvas = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,14 +9,7 @@ const Offcanvas = () => {
 
   return (
     <>
-      <AnimatePresence>
-        {isMenuOpen && (
-          <AbsoluteOverlay css={{ zIndex: '$overlay' }}>
-            <OffcanvasBackdrop />
-            <OffcanvasMenu />
-          </AbsoluteOverlay>
-        )}
-      </AnimatePresence>
+      <OffcanvasNavbar isOpen={isMenuOpen} />
       <OffcanvasToggle toggle={() => toggleMenu()} />
     </>
   );
