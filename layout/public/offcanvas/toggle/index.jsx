@@ -1,13 +1,13 @@
 import { motion } from 'framer-motion';
-import PropTypes from 'prop-types';
 
 import { Text } from './index.styled';
 import { BlobButton } from '@/components/button';
 import { AbsoluteOverlay } from '@/components/overlay';
+import { SheetTrigger } from '@/components/ui/sheet';
 
 const MotionComponent = motion(AbsoluteOverlay);
 
-const OffcanvasToggle = ({ toggle }) => {
+const OffcanvasToggle = () => {
   return (
     <MotionComponent
       drag
@@ -19,32 +19,29 @@ const OffcanvasToggle = ({ toggle }) => {
       }}
       dragElastic={0.3}
       css={{
-        inset: '0 0 auto auto',
+        insetBlockEnd: 'auto',
+        insetInlineStart: 'auto',
         me: '1.5rem',
         mt: '1.5rem',
-        zIndex: '$overlay',
       }}
     >
-      <BlobButton
-        variant='ghost'
-        onClick={toggle}
-        css={{
-          '&::before': {
-            bg: 'hsl(var(--primary) / 0.75)',
-          },
-          '&::after': {
-            borderColor: 'hsl(var(--foreground))',
-          },
-        }}
-      >
-        <Text>Menu</Text>
-      </BlobButton>
+      <SheetTrigger asChild>
+        <BlobButton
+          variant='ghost'
+          css={{
+            '&::before': {
+              bg: 'hsl(var(--primary) / 0.75)',
+            },
+            '&::after': {
+              borderColor: 'hsl(var(--foreground))',
+            },
+          }}
+        >
+          <Text>Menu</Text>
+        </BlobButton>
+      </SheetTrigger>
     </MotionComponent>
   );
-};
-
-OffcanvasToggle.propTypes = {
-  toggle: PropTypes.func.isRequired,
 };
 
 export default OffcanvasToggle;

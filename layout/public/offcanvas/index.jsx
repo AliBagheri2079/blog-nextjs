@@ -1,17 +1,18 @@
 'use client';
 import { useState } from 'react';
+
 import OffcanvasToggle from './toggle';
 import OffcanvasNavbar from './navbar';
+import { Sheet } from '@/components/ui/sheet';
 
 const Offcanvas = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const toggleMenu = () => setIsMenuOpen(preState => !preState);
 
   return (
-    <>
+    <Sheet onOpenChange={status => setIsMenuOpen(status)}>
+      <OffcanvasToggle />
       <OffcanvasNavbar isOpen={isMenuOpen} />
-      <OffcanvasToggle toggle={() => toggleMenu()} />
-    </>
+    </Sheet>
   );
 };
 

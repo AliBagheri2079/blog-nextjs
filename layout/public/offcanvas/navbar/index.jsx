@@ -3,18 +3,20 @@ import PropTypes from 'prop-types';
 
 import OffcanvasBackdrop from '../back-drop';
 import OffcanvasMenu from '../menu';
-import { AbsoluteOverlay } from '@/components/overlay';
+import { SheetContent } from '@/components/ui/sheet';
 
 const OffcanvasNavbar = ({ isOpen }) => {
   return (
-    <AnimatePresence>
-      {isOpen && (
-        <AbsoluteOverlay as='nav' css={{ zIndex: '$overlay' }}>
-          <OffcanvasBackdrop />
-          <OffcanvasMenu />
-        </AbsoluteOverlay>
-      )}
-    </AnimatePresence>
+    <SheetContent className='w-full border-none bg-transparent data-[state=closed]:duration-3000 sm:max-w-full'>
+      <AnimatePresence>
+        {isOpen && (
+          <nav>
+            <OffcanvasBackdrop />
+            <OffcanvasMenu />
+          </nav>
+        )}
+      </AnimatePresence>
+    </SheetContent>
   );
 };
 

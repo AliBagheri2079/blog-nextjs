@@ -2,7 +2,6 @@ import { motion } from 'framer-motion';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
 
-import { randomId } from '@/utils/helpers';
 import { RevealText } from '@/components/text';
 import { Underline } from '@/components/icon';
 
@@ -37,6 +36,7 @@ const MenuItem = ({ text, url }) => {
     >
       <Link
         href={url ?? '/not-found'}
+        passHref
         className='reveal-wrapper underline-wrapper'
         style={{
           position: 'relative',
@@ -45,10 +45,7 @@ const MenuItem = ({ text, url }) => {
           fontSize: 'clamp(1rem, 1rem + 5vw, 5rem)',
         }}
       >
-        {text.split('').map((value, index) => (
-          <RevealText key={randomId()} value={value} index={index} />
-        ))}
-
+        <RevealText text={text} />
         <Underline />
       </Link>
     </motion.li>
