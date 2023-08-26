@@ -6,7 +6,7 @@ import VerticalTitle from './vertical-title';
 
 const Header = () => {
   return (
-    <header className='h-screen max-w-full supports-[height:100svh]:h-[100svh]'>
+    <header className='full-height max-w-full snap-center snap-always'>
       <div className='grid h-full grid-cols-6 grid-rows-6 gap-4 px-8 py-6'>
         <BrandLogo />
         <SocialMediaLinks />
