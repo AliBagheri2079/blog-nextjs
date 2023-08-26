@@ -7,7 +7,7 @@ import { SheetContent } from '@/components/ui/sheet';
 
 const OffcanvasNavbar = ({ isOpen }) => {
   return (
-    <SheetContent className='w-full border-none bg-transparent data-[state=closed]:duration-3000 sm:max-w-full'>
+    <SheetContent className='w-full border-none bg-transparent data-[state=closed]:duration-2000 sm:max-w-full'>
       <AnimatePresence>
         {isOpen && (
           <nav>
