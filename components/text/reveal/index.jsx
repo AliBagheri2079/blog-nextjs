@@ -1,21 +1,22 @@
 import PropTypes from 'prop-types';
+
 import Text from './index.styled';
+import { randomId } from '@/utils/helpers';
 
 /**
   NOTE: Should add this component inside a component that have a 'reveal-wrapper' class
  */
-const RevealText = ({ value, index }) => {
-  return (
-    <Text>
+const RevealText = ({ text }) => {
+  return text.split('').map((value, index) => (
+    <Text key={randomId()}>
       <span style={{ transitionDelay: `${index * 50}ms` }}>{value}</span>
       <span style={{ transitionDelay: `${index * 50}ms` }}>{value}</span>
     </Text>
-  );
+  ));
 };
 
 RevealText.propTypes = {
-  value: PropTypes.string.isRequired,
-  index: PropTypes.number,
+  text: PropTypes.string.isRequired,
 };
 
 export default RevealText;
