@@ -11,7 +11,7 @@ const ParallaxProgress = () => {
     restDelta: 0.001,
   });
 
-  return <MotionComponent className='h-1 bg-foreground' style={{ scaleX }} />;
+  return <MotionComponent className='h-1 bg-primary' style={{ scaleX }} />;
 };
 
 export default ParallaxProgress;
