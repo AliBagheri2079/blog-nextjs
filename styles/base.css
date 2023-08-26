@@ -2,4 +2,8 @@
   * {
     border-color: theme(colors.border);
   }
+
+  html {
+    scroll-snap-type: y mandatory;
+  }
 }
