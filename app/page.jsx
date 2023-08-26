@@ -6,10 +6,7 @@ const Home = () => {
     <>
       <Overlay />
       <Header />
-
-      <main className='container h-screen min-h-screen bg-primary-foreground/10'>
-        <section>main content</section>
-      </main>
+      <Content />
     </>
   );
 };
