@@ -30,7 +30,7 @@ const ParallaxImage = ({ image, title }) => {
       </div>
 
       <motion.div
-        className='absolute right-[10%] max-w-md text-center'
+        className='absolute right-[10%] max-w-sm hyphens-auto break-all text-center'
         style={{ y }}
       >
         <StrokeText as='h2' className='text-2xl capitalize md:text-6xl'>
