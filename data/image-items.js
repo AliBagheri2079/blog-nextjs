@@ -1,35 +1,53 @@
 import { randomId } from '@/utils/helpers';
 
-import Building from '@/assets/images/building.avif';
-import Girl from '@/assets/images/girl.avif';
-import Book from '@/assets/images/book.avif';
-import House from '@/assets/images/house.avif';
-import Window from '@/assets/images/window.avif';
+import Antara from '@/assets/images/antara.jpg';
+import April from '@/assets/images/april.jpg';
+import CreativeSkills from '@/assets/images/creative-skills.jpg';
+import EvgeniaPotrashynska from '@/assets/images/evgenia-potrashynska.jpg';
+import FoodWine from '@/assets/images/food-wine.jpg';
+import FranciscoJose from '@/assets/images/francisco-jose.jpg';
+import Sance from '@/assets/images/sance.jpg';
+import TeamMembers from '@/assets/images/team-members.jpg';
 
 export const imageItems = [
   {
     id: randomId(),
-    image: Building,
-    title: 'old house',
+    image: Antara,
+    title: 'Antara',
   },
   {
     id: randomId(),
-    image: Book,
-    title: 'book and chair',
+    image: April,
+    title: 'April',
   },
   {
     id: randomId(),
-    image: Girl,
-    title: 'lady and songs',
+    image: CreativeSkills,
+    title: 'Creative Skills',
   },
   {
     id: randomId(),
-    image: House,
-    title: 'house and mountain',
+    image: EvgeniaPotrashynska,
+    title: 'Evgenia Potrashynska',
   },
   {
     id: randomId(),
-    image: Window,
-    title: 'window inside a room',
+    image: FoodWine,
+    title: 'Food Wine',
+  },
+  {
+    id: randomId(),
+    image: FranciscoJose,
+    title: 'Francisco Jose',
+  },
+  {
+    id: randomId(),
+    image: Sance,
+    title: 'Sance',
+  },
+  {
+    id: randomId(),
+    image: TeamMembers,
+    title: 'Team Members',
   },
 ];
