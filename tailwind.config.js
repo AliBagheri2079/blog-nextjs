@@ -1,5 +1,5 @@
-import shadcnPlugin from './lib/shadcn/tw-plugin';
 import animatePlugin from 'tailwindcss-animate';
+import shadcnPlugin from './lib/plugin/shadcn.plugin';
 
 /** @type {import('tailwindcss').Config} */
 const tailwindConfig = {
