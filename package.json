@@ -33,6 +33,7 @@
     "@splinetool/runtime": "^0.9.424",
     "@stitches/core": "^1.2.8",
     "@stitches/react": "^1.2.8",
+    "@studio-freight/lenis": "^1.0.19",
     "autoprefixer": "10.4.15",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
