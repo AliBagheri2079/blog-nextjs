@@ -28,7 +28,7 @@ const Lenis = () => {
   return (
     <motion.svg
       xmlns='http://www.w3.org/2000/svg'
-      viewBox='0 0 1900 400'
+      viewBox='0 0 2500 400'
       fill='none'
     >
       <motion.g>
