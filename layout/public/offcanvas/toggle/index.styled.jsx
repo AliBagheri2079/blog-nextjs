@@ -9,17 +9,17 @@ export const Text = stitches.styled('span', {
   lineHeight: '1.25rem',
 
   '@bp1': {
+    fontSize: '1rem',
+    lineHeight: '1.5rem',
+  },
+
+  '@bp2': {
     fontSize: '1.25rem',
     lineHeight: '1.75rem',
   },
 
-  '@bp2': {
+  '@bp3': {
     fontSize: '1.5rem',
     lineHeight: '2rem',
-  },
-
-  '@bp3': {
-    fontSize: '1.875rem',
-    lineHeight: '2.25rem',
   },
 });

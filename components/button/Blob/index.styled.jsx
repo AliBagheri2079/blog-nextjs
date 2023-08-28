@@ -15,8 +15,8 @@ const borderTransform = stitches.keyframes({
 
 const BlobButton = stitches.styled(Button, {
   pos: 'relative',
-  width: 'calc(2.5rem + 10vw)',
   height: 'unset',
+  width: 'calc(5rem + 5vw)',
   aspectRatio: '5 / 3',
 
   '&::before, &::after': {
