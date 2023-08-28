@@ -2,6 +2,7 @@ import '@/styles/main.css';
 import { avineo, monument_regular, monument_ultrabold } from '@/assets/fonts';
 import { cn } from '@/lib/utils';
 import { stitches } from '@/lib/config/stitches.config';
+import { Offcanvas } from '@/layout/public';
 
 export const metadata = {
   title: 'Next.js Blog',
@@ -28,6 +29,7 @@ function RootLayout({ children }) {
           monument_regular.className,
         )}
       >
+        <Offcanvas />
         {children}
       </body>
     </html>

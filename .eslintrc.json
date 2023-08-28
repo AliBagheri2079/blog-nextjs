@@ -21,7 +21,8 @@
           "index"
         ]
       }
-    ]
+    ],
+    "tailwindcss/no-custom-classname": "off"
   },
   "settings": {
     "import/resolver": {
