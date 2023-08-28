@@ -1,7 +1,7 @@
 import { AnimatePresence } from 'framer-motion';
 import PropTypes from 'prop-types';
 
-import OffcanvasBackdrop from '../back-drop';
+import OffcanvasBackdrop from '../backdrop';
 import OffcanvasMenu from '../menu';
 import { SheetContent } from '@/components/ui/sheet';
 
