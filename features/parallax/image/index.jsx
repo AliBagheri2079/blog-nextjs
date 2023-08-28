@@ -19,7 +19,13 @@ const ParallaxImage = ({ image, title }) => {
     >
       <div ref={elemRef} className='h-1/2 w-4/5 max-w-xl overflow-hidden'>
         <AspectRatio ratio={1 / 1}>
-          <Image src={image} alt={title} className='object-contain' fill />
+          <Image
+            src={image}
+            fill
+            placeholder='blur'
+            className='object-contain'
+            alt={title}
+          />
         </AspectRatio>
       </div>
 
