@@ -6,8 +6,4 @@
   html {
     scroll-snap-type: y mandatory;
   }
-
-  body {
-    background-image: url('/stars.png');
-  }
 }
