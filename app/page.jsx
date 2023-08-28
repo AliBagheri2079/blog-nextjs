@@ -1,10 +1,9 @@
-import { HomochiralThree as Overlay } from '@/features/three';
-import { Content, Header } from '@/layout/home';
+import { Content, Header, Backdrop } from '@/layout/home';
 
 const Home = () => {
   return (
     <>
-      <Overlay />
+      <Backdrop />
       <Header />
       <Content />
     </>
