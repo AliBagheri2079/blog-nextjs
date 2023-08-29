@@ -4,11 +4,6 @@ import { cn } from '@/lib/utils';
 import { stitches } from '@/lib/config/stitches.config';
 import { Offcanvas } from '@/layout/public';
 
-export const metadata = {
-  title: 'Next.js Blog',
-  description: 'Story telling about nothing...',
-};
-
 function RootLayout({ children }) {
   return (
     <html
