@@ -5,7 +5,7 @@ This Layout made with Next.js, Shadcn UI(with Radix UI, Lucide Icons, Radix Colo
 <img
 src="./public/images/Screenshot-1.png"
 loading="lazy"
-alt="home page layout screenshot"
+alt="home page layouts screenshot"
 />
 
 <img
