@@ -2,6 +2,8 @@
 
 This Layout made with Next.js, Shadcn UI(with Radix UI, Lucide Icons, Radix Colors), Stitches, PropType, Spline, Framer motion, Typed.js, React Wrap Balancer, Tailwind and Postcss.
 
+## [Demo Link](https://blog-nextjs-temp.vercel.app/)
+
 <img
 src="./public/images/Screenshot-1.png"
 loading="lazy"
@@ -50,30 +52,35 @@ Clone the project
 
 ```bash
   git clone https://github.com/AliBagheri2079/blog-nextjs.git
+
 ```
 
 Go to the project directory
 
 ```bash
   cd blog-nextjs
+
 ```
 
 Install dependencies
 
 ```bash
   npm install
+
 ```
 
 Start the server
 
 ```bash
   npm run dev
+
 ```
 
 Format the Component
 
 ```bash
   npm run format
+
 ```
 
 linting the Component
@@ -81,6 +88,7 @@ linting the Component
 ```bash
   npm run lint
   npm run lint:style
+
 ```
 
 ## 🚀 About Me
